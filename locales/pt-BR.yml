@@ -1,3 +1,5 @@
+intro: Boilerplate criado por Fernando Andrade
 greetings:
-  hi: Olá
-
+  hi: Bem-vindo {name}!
+button:
+  go: Entrar

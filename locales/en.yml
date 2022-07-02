@@ -1,2 +1,5 @@
+intro: Boilerplate creado by Fernando Andrade
 greetings:
-  hi: Hi
+  hi: Welcome {name}!
+button:
+  go: Sign in

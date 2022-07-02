@@ -1,9 +1,9 @@
 {
-  "name": "landing-page",
-  "private": true,
-  "version": "0.0.0",
+  "name": "vue-boilerplate",
+  "private": false,
+  "version": "!.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
