@@ -2,13 +2,21 @@
 import Input from '@/components/Input/index.vue'
 import Button from '@/components/Button/index.vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 const { t } = useI18n();
+const onSubmit = async () => {
+  console.log('teste');
+  router.push({ path: '/hello' })
+}
 </script>
 
 <template>
   <div class="wrapper">
     <Input :placeholder="t('intro.enter-name')" />
     <Button
+      @click="onSubmit"
       :primary="true"
       :label="t('button.go')"
       :size="'large'"

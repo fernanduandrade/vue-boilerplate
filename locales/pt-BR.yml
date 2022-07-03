@@ -3,5 +3,6 @@ greetings:
   hi: Bem-vindo {name}!
 button:
   go: Entrar
+  back: Voltar
 intro:
   enter-name: Qual o seu nome?
