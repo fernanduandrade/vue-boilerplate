@@ -1,5 +1,5 @@
 <script lang="ts">
-import './scss/base.scss';
+import './scss/component.scss';
 import { reactive, computed, defineComponent } from 'vue';
 export default defineComponent({
   name: 'Button',

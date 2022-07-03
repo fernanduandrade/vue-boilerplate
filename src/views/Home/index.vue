@@ -6,16 +6,15 @@ const { t } = useI18n();
 
 <template>
   <div class="wrapper">
-    <h1 class="title">{{ t('intro') }}</h1>
     <Button
       :primary="true"
       :label="t('button.go')"
       :size="'large'"
-      :backgroundColor="'#5B21B6'"
+      :backgroundColor="'#333'"
     />
   </div>
 </template>
 
-<style lang="scss">
-@import './scss/base.scss'
+<style scopred lang="scss">
+@import './scss/main.scss'
 </style>
