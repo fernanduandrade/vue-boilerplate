@@ -1,10 +1,13 @@
 .footer {
   align-self: flex-end;
+  height: 10vh;
+  position: relative;
 
   &--title {
-    margin-left: 0.5rem;
+    position: absolute;
+    top: 30%;
+    margin-left: 1rem;
     font-size: 1.6rem;
-    margin-top: 1rem;
   }
 
   &--side {
