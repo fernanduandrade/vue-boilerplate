@@ -1,0 +1,16 @@
+.input {
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem 0.1rem;
+  text-align: center;
+  border: 2px solid #0a0a0a;
+  background-color: #0a0a0a;
+  color: #767676;
+  font-size: 1.6rem;
+  line-height: 2;
+  border-radius: .375rem;
+
+  &:focus {
+    outline: none;
+    border-color: rgba(118,118,118,.24);
+  }
+}

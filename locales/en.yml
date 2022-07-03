@@ -1,5 +1,7 @@
-intro: Boilerplate creado by Fernando Andrade
+rights: Boilerplate creado by Fernando Andrade
 greetings:
   hi: Welcome {name}!
 button:
   go: Sign in
+intro:
+  enter-name: Qual o seu nome?

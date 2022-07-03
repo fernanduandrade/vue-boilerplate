@@ -7,6 +7,6 @@ const { t } = useI18n()
 <template>
   <footer class="footer">
     <hr class="footer--side" />
-    <h1 class="footer--title">&copy; {{ t('intro') }}</h1>
+    <h1 class="footer--title">&copy; {{ t('rights') }}</h1>
   </footer>
 </template>
