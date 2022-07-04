@@ -26,7 +26,7 @@ export default defineComponent({
 <template>
   <input
     :value="modelValue"
-    @change="$emit('update:modelValue', $event.target.value)"
+    @change="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
     type="text"
     :placeholder="placeholder"
     class="input"
