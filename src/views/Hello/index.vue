@@ -2,17 +2,20 @@
 import Button from '@/components/Button/index.vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
+import { store } from '../../store/user';
 
 const router = useRouter()
 const { t } = useI18n();
+const name = store.state.username;
 const goBack = async () => {
+  store.dispatch('clearName');
   router.push({ path: '/' })
 }
 </script>
 
 <template>
   <div class="wrapper">
-    <p class="paragraph">{{t('greetings.hi', { name: 'Nando'})}} 😉</p>
+    <p class="paragraph">{{t('greetings.hi', { name})}} 😉</p>
     <Button
       @click="goBack"
       :primary="true"

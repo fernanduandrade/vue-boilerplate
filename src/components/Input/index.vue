@@ -1,18 +1,23 @@
 <script lang="ts">
 import './scss/component.scss';
-import { defineComponent, reactive } from 'vue';
+import { defineComponent, reactive, ref } from 'vue';
 export default defineComponent({
   name: 'Input',
   props: {
     placeholder: {
       type: String,
-      default: ""
-    }
+      default: ''
+    },
+    modelValue: {
+      type: String,
+      default: ''
+    } 
   },
-  setup(props) {
+  setup(props, {emit}) {
+    const text = ref('');
     props = reactive(props);
     return {
-      placeholder: props.placeholder
+      placeholder: props.placeholder,
     }
   }
 })
@@ -20,6 +25,8 @@ export default defineComponent({
 
 <template>
   <input
+    :value="modelValue"
+    @change="$emit('update:modelValue', $event.target.value)"
     type="text"
     :placeholder="placeholder"
     class="input"

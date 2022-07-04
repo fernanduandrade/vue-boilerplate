@@ -3,18 +3,23 @@ import Input from '@/components/Input/index.vue'
 import Button from '@/components/Button/index.vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
-
+import { store } from '../../store/user'
+import { ref } from 'vue';
 const router = useRouter()
 const { t } = useI18n();
+const name = ref('')
 const onSubmit = async () => {
-  console.log('teste');
+  store.dispatch('setUser', name.value)
   router.push({ path: '/hello' })
 }
 </script>
 
 <template>
   <div class="wrapper">
-    <Input :placeholder="t('intro.enter-name')" />
+    <Input
+      :placeholder="t('intro.enter-name')"
+      v-model="name"
+    />
     <Button
       @click="onSubmit"
       :primary="true"
