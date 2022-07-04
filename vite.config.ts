@@ -1,5 +1,6 @@
-import * as path from 'path'
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
+import * as path from 'path'
 import vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 
@@ -17,5 +18,8 @@ export default defineConfig({
       compositionOnly: true,
       include: [path.resolve(__dirname, 'locales/**')],
     }),
-  ]
+  ],
+  test: {
+    environment: 'jsdom',
+  },
 })
