@@ -7,6 +7,16 @@ const { t } = useI18n()
 <template>
   <footer class="footer">
     <hr class="footer--side" />
-    <h1 class="footer--title">&copy; {{ t('rights') }}</h1>
+    <h1 class="footer--title">
+      &copy; {{ t('rights') }}
+      <a 
+        class="footer--link"
+        href="https://linktr.ee/fernanduandrade"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      Fernando Andrade
+      </a>
+    </h1>
   </footer>
 </template>

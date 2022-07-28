@@ -1,0 +1,8 @@
+rights: Boilerplate creado by
+greetings:
+  hi: Welcome {name}!
+button:
+  go: Sign in
+  back: Go back
+intro:
+  enter-name: What's your name?

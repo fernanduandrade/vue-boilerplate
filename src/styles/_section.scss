@@ -2,6 +2,7 @@
   align-self: flex-end;
   height: 10vh;
   position: relative;
+  transition: all ease-in-out .2s;
 
   &--title {
     position: absolute;
@@ -13,5 +14,14 @@
   &--side {
     width: 99%;
     margin: auto;
+  }
+
+  &--link {
+    text-decoration: none;
+    color: #fff;
+    
+    &:hover {
+      font-size: 1.8rem;
+    }
   }
 }

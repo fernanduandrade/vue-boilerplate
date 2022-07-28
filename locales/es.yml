@@ -1,8 +1,0 @@
-rights: Boilerplate created by Fernando Andrade
-greetings:
-    hi: ¡Bienvenido {name}!
-button:
-  go: Iniciar sesión
-  back: Volver
-intro:
-  enter-name: Qual o seu nome?

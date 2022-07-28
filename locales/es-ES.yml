@@ -1,0 +1,8 @@
+rights: Repetitivo creado por
+greetings:
+    hi: ¡Bienvenido {name}!
+button:
+  go: Iniciar sesión
+  back: Volver
+intro:
+  enter-name: ¿Cual es tu nombre?
