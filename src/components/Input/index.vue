@@ -1,6 +1,6 @@
 <script lang="ts">
 import './scss/component.scss';
-import { defineComponent, reactive, ref } from 'vue';
+import { defineComponent, reactive } from 'vue';
 export default defineComponent({
   name: 'Input',
   props: {
@@ -14,7 +14,6 @@ export default defineComponent({
     } 
   },
   setup(props, {emit}) {
-    const text = ref('');
     props = reactive(props);
     return {
       placeholder: props.placeholder,
