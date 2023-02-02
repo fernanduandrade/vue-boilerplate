@@ -9,14 +9,17 @@ const router = useRouter()
 const { t } = useI18n();
 const name = ref('')
 const onSubmit = async () => {
-  store.dispatch('setUser', name.value)
-  router.push({ path: '/hello' })
+  if(name.value) {
+    store.dispatch('setUser', name.value)
+    router.push({ path: '/hello' })
+  }
 }
 </script>
 
 <template>
   <div class="wrapper">
     <Input
+      v-on:keyup.enter="onSubmit"
       :placeholder="t('intro.enter-name')"
       v-model="name"
     />
